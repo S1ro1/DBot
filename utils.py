@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def load_data() -> list[pd.DataFrame]:
     schedules = []
 

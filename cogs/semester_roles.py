@@ -125,5 +125,5 @@ class AddSemesterRoles(commands.Cog):
         await self._init_semesters()
 
 
-async def setup(bot):
-    await bot.add_cog(AddSemesterRoles(bot))
+def setup(bot):
+    bot.add_cog(AddSemesterRoles(bot))

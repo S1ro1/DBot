@@ -1,6 +1,7 @@
 import yaml
 import os
 
+
 class Config(dict):
 
     def __init__(self):
@@ -21,7 +22,6 @@ class Config(dict):
                     pass
 
                 data[key] = val
-                
 
         super().__init__(data)
 
