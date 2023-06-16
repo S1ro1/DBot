@@ -1,4 +1,4 @@
 pandas==1.4.4
 pyyaml==6.0
 lxml==4.9.2
-pycord==2.4.1
+py-cord==2.4.1
