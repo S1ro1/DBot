@@ -5,7 +5,8 @@ import os
 class Config(dict):
 
     def __init__(self):
-        keys = ["bot_token", "server_id", "semester_message", "bot_channel"]
+        keys = ["bot_token", "server_id", "semester_message",
+                "bot_channel", "command_channel", "db_url"]
         data = {}
         try:
             with open("config.yaml", "r") as f:
