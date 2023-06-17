@@ -21,5 +21,12 @@ class DBot(discord.Bot):
 
 TOKEN = cfg.get("bot_token")
 bot = DBot(command_prefix=">", intents=intents)
-bot.load_extension("cogs.semester_roles")
+extensions = [
+    "cogs.semester_roles",
+    "cogs.taggable_roles"
+]
+
+for ext in extensions:
+    bot.load_extension(ext)
+
 bot.run(TOKEN)

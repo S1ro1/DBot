@@ -1,4 +1,6 @@
+from pymongo import MongoClient
 import pandas as pd
+from config import config as cfg
 
 
 def load_data() -> list[pd.DataFrame]:
